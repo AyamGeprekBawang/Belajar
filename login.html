@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" type="text/css">
+    <style>
+       body {
+       text-align: center;
+       margin: 0;
+       min-height:100vh;
+       background-image: url("https://images.wallpapersden.com/image/download/frieren-hd-frieren-beyond-journey-s-end_bmdoamyUmZqaraWkpJRpamVlrWdsa2Y.jpg");
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       }
+
+       section {
+        text-align: center;
+         } 
+
+       footer {
+        text-align: center;
+         }
+ 
+     </style>
+ </head>
+     <body> 
+      <a href="https://www.instagram.com/hydrobluzzz/" class="bck">Support me</a>
+      <img src="https://www.themoviedb.org/t/p/original/yo285bWe7O3YYwhjXazqL7OPUsq.png" width="400">
+      <footer>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id.
+      </footer>
+      <section class="blur"> 
+       <h1 style="color: aliceblue; font-size: 30px;  font-family: 'Poppins', sans-serif;">Login</h1>
+       <form onsubmit="return login()">
+  <input type="text" id="username" class="login" placeholder="Username"><br>
+  <input type="password" id="password" class="login" placeholder="Password"><br>
+  <button type="submit" class="btn">Login</button>
+</form>
+
+<script>
+function login() {
+  let user = document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+
+  if (user === "a" && pass === "1") {
+    window.location.href = "home.html";
+  } else {
+    alert("Salah!");
+  }
+  return false;
+}
+</script>
+     </section>
+    </body>
+</html>
